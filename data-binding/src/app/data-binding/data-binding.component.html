@@ -1,4 +1,4 @@
-<section class="property-binding">
+<!-- <section class="property-binding">
    <article>
       <h3>Interpolation/ Interpolação</h3>
       <p>String rederizada com interpolação: {{ url }}</p>
@@ -10,4 +10,29 @@
       <img src="{{ urlImagem }}">
       <img [src]="urlImagem">
    </article>
-</section>
+   <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">
+        Click aqui
+      </button>
+       <br><br>
+      <input type="text"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="salvarValor(campoInput.value)"
+      (blur)="salvarValor(campoInput.value)"
+      #campoInput/>
+      <p>sainda Input: {{ valorAtual }}</p>
+      <p>sainda Input salvo: {{ valorSalvo }}</p>
+      <br><br>
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highLight]="isMouseOver"
+      >
+        Passe o mause aqui!
+      </span>
+    </div>
+   </article>
+</section> -->
+<app-meu-form></app-meu-form>
