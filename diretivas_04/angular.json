@@ -1,8 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "5fe310ce-7071-46d8-9900-715ab845799f",
-    "defaultCollection": "@angular-eslint/schematics"
+    "analytics": "fc07be30-236d-4274-b508-d2394f30e284"
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -103,15 +102,6 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
-          }
-        },
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
@@ -158,11 +148,6 @@
           }
         }
       }
-    }
-  },
-  "schematics": {
-    "@schematics/angular:component": {
-      "style": "scss"
     }
   },
   "defaultProject": "diretivas_04"
