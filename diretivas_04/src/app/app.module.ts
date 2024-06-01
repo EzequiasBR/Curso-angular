@@ -7,18 +7,24 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivasNgswitchComponent } from './diretivas-ngswitch/diretivas-ngswitch.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
+import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DiretivaNgifComponent,
     DiretivasNgswitchComponent,
-    DiretivaNgforComponent
+    DiretivaNgforComponent,
+    DiretivaNgClassComponent,
+    DiretivaNgStyleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

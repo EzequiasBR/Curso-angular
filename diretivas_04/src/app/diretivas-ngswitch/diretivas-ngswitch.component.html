@@ -19,3 +19,15 @@
  <p *ngSwitchCase="'lista'">Modo Lista esta ativado!</p>
  <p *ngSwitchDefault>Home ativado</p>
 </div>
+<h5>Removendo o * e usando template</h5>
+<div class="container" [ngSwitch]="aba">
+  <ng-template [ngSwitchCase]="'mapa'">
+    <p>Modo Mapa esta ativado!</p>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'lista'">
+    <p>Modo Lista esta ativado!</p>
+  </ng-template>
+  <ng-template ngSwitchDefault>
+    <p>Modo Home esta ativado!</p>
+  </ng-template>
+</div>

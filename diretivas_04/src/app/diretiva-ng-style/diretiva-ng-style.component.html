@@ -1,0 +1,26 @@
+<h1>diretiva-ng-style!</h1>
+<hr class="my-3">
+<button [style.backgroundColor]="ativo ? 'blue' : 'grey'"
+[style.color]="ativo ? 'white' : 'red'"
+[style.fontWeight]="ativo ? 'bold' : 'normal'"
+[style.fontSize]="tamanhoFonte + 'px'"
+(click)="onMudarAtivo()"
+>
+  Mundar atributo 'ativo'
+</button>
+<br>
+<input type="text"  [(ngModel)]="tamanhoFonte">
+
+<h2>style com diretiva ngStyle </h2>
+<hr class="my-3">
+<button
+[ngStyle]="{'backgroundColor': ativo ? 'blue' : 'grey',
+'color': ativo ? 'white' : 'red',
+'fontWeight': ativo ? 'bold' : 'normal',
+'fontSize': tamanhoFonte + 'px'
+}"
+(click)="onMudarAtivo()"
+>
+  Mundar atributo 'ativo'
+</button>
+

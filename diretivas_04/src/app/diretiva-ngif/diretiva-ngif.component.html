@@ -23,3 +23,12 @@
 <div [hidden]="mostracursos">
   Não existem cursos para serem Listados.
 </div>
+<!-- Diretivas: sobre o * e template  -->
+<h5>Removendo o * e usando template</h5>
+<div *ngIf="mostracursos">
+  Lista de cursos!
+</div>
+
+<ng-template [ngIf]="mostracursos">
+  <div>Lista de cursos com template</div>
+</ng-template>
