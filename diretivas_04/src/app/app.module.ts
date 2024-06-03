@@ -10,6 +10,10 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
 import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
 import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.component';
 import { FormsModule } from '@angular/forms';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { FormsModule } from '@angular/forms';
     DiretivasNgswitchComponent,
     DiretivaNgforComponent,
     DiretivaNgClassComponent,
-    DiretivaNgStyleComponent
+    DiretivaNgStyleComponent,
+    OperadorElvisComponent,
+    ExemploNgContentComponent,
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent
   ],
   imports: [
     BrowserModule,

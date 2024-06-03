@@ -1,0 +1,8 @@
+<div class="container">
+   <h1>Ultilizando Operador Elvis.</h1>
+
+   <p>Descrição: {{ tarefa.desc }}</p>
+   <!-- <p>Descrição: {{ tarefa.reposavel != null ? tarefa.reposavel.nome : " " }}</p> -->
+   <!-- <p>Descrição: {{ tarefa.reposavel?.nome }}</p> -->
+   <p>Descrição: {{ tarefa.reposavel?.usuario?.nome }}</p>
+</div>
